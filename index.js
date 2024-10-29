@@ -6,9 +6,10 @@ items.forEach((i) => {
   if (typeof i === "number") {
     if (i % 2 === 0) results.push(i * 2);
   } else if (i === null) {
-    consol.log("Found a null item");
+    console.log("Found a null item");
   } else {
     results.push(parseInt(i));
+    console.log("Found an item that is not a number:", i);
   }
 });
 
